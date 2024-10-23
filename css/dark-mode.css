@@ -1,0 +1,165 @@
+/* dark-mode.css */
+
+/* Dark mode styles for the body */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Dark mode styles for cards */
+.dark-mode .card, 
+.dark-mode .result-card,
+.dark-mode .input-card {
+    background-color: #2a2a2a;
+    box-shadow: 0 2px 4px rgba(255,255,255,0.1);
+    color: #ffffff;
+}
+
+/* Hover effect for cards in dark mode */
+.dark-mode .card:hover, 
+.dark-mode .result-card:hover {
+    box-shadow: 0 4px 8px rgba(255,255,255,0.15);
+}
+
+/* Dark mode styles for input fields */
+.dark-mode input[type="number"], 
+.dark-mode input[type="text"] {
+    background-color: #333;
+    color: #fff;
+    border-color: #555;
+}
+
+/* Dark mode styles for buttons */
+.dark-mode button {
+    border-color: #555;
+}
+
+.dark-mode button:hover {
+    opacity: 0.9;
+}
+
+/* Dark mode styles for specific buttons */
+.dark-mode #darkModeButton {
+    background-color: #666;
+}
+
+.dark-mode #darkModeButton.active {
+    background-color: #4CAF50;
+}
+
+/* Dark mode styles for various text elements in result cards */
+.dark-mode .result-card h4, 
+.dark-mode .result-card .topic, 
+.dark-mode .result-card .result, 
+.dark-mode .result-card .modifier, 
+.dark-mode .result-card .modifier-result,
+.dark-mode .result-card .dice-symbol {
+    color: #f0f0f0;
+}
+
+/* Dark mode styles for modifier value */
+.dark-mode .result-card .modifier-value {
+    color: #6EE76E;
+}
+
+/* Dark mode styles for timestamp */
+.dark-mode .result-card .timestamp {
+    color: #aaa;
+}
+
+/* Dark mode styles for side panel */
+.dark-mode #sidePanel {
+    background-color: #2a2a2a;
+    box-shadow: -2px 0 5px rgba(255,255,255,0.1);
+}
+
+/* Dark mode styles for side panel indicator */
+.dark-mode #sidePanelIndicator {
+    background-color: #2a2a2a;
+    color: #ffffff;
+    box-shadow: -2px 0 5px rgba(255,255,255,0.1);
+}
+
+/* Dark mode styles for messages */
+.dark-mode .message {
+    box-shadow: 0 2px 5px rgba(255,255,255,0.2);
+}
+
+.dark-mode .message.info {
+    background-color: #0d47a1;
+    color: #e3f2fd;
+}
+
+.dark-mode .message.warning {
+    background-color: #e65100;
+    color: #fff3e0;
+}
+
+.dark-mode .message.error {
+    background-color: #b71c1c;
+    color: #ffebee;
+}
+
+.dark-mode .message.success {
+    background-color: #1b5e20;
+    color: #e8f5e9;
+}
+
+/* Dark mode styles for statistics popup */
+.dark-mode #statisticsPopup {
+    background-color: #2a2a2a;
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(255,255,255,0.3);
+}
+
+.dark-mode #statisticsPopup h3 {
+    color: #ffffff;
+}
+
+.dark-mode #statisticsPopup .indent {
+    color: #cccccc;
+}
+
+/* Dark mode styles for dice results */
+.dark-mode .dice-value {
+    border: 1px solid #555;
+}
+
+.dark-mode .d6 .dice-value {
+    background-color: #444;
+}
+
+.dark-mode .d10 .dice-value.beaten {
+    background-color: #3d8b40;
+}
+
+.dark-mode .d10 .dice-value.not-beaten {
+    background-color: #c62828;
+}
+
+/* Dark mode styles for buttons in messages */
+.dark-mode .message-buttons button {
+    border: 1px solid #555;
+}
+
+.dark-mode .confirm-button {
+    background-color: #3d8b40;
+}
+
+.dark-mode .cancel-button {
+    background-color: #c62828;
+}
+
+/* Dark mode styles for download link */
+.dark-mode .download-link {
+    background-color: #3d8b40;
+}
+
+.dark-mode .download-link:hover {
+    background-color: #2d6b30;
+}
+
+/* Dark mode styles for dividers */
+.dark-mode hr {
+    border-color: #444;
+}

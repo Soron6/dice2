@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iron Dice Roller</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/inputs.css">
+    <link rel="stylesheet" href="css/results.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/side-panel.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+</head>
+<body>
+    <div class="card input-card">
+        <div class="logo-container">
+            <img src="assets/header_text.png" alt="Iron Dice Roller Logo" class="logo">
+        </div>
+
+        <div id="inputAndButtons">
+            <div id="topRow">
+                <button id="toggleButton" class="full-width">Aktion</button>
+                <div id="variableSection">
+                    <button id="decrementButton">-</button>
+                    <input type="number" id="variableInput" value="3" min="0">
+                    <button id="incrementButton">+</button>
+                </div>
+            </div>
+            <div id="middleRow">
+                <input type="text" id="topicInput" placeholder="Thema (optional)" class="full-width">
+            </div>
+            <div id="bottomRow">
+                <button id="rollButton" class="full-width">Roll</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="diceAnimationContainer">
+        <div id="d6Animation">
+            <div class="resultText"></div>
+        </div>
+        <div id="d10Animation1">
+            <div class="resultText"></div>
+        </div>
+        <div id="d10Animation2">
+            <div class="resultText"></div>
+        </div>
+    </div>
+
+    <div id="results"></div>
+
+    <div id="sidePanel">
+        <div id="sidePanelContent">
+            <h2>Einstellungen</h2>
+            <button id="darkModeButton" class="sidebarButton">Darkmode</button>
+            <button id="soundToggleButton" class="sidebarButton">Sound: An</button>
+            <button id="languageToggleButton" class="sidebarButton">Sprache: DE</button>
+            <hr>
+            <button id="exportCsvButton" class="sidebarButton">Export CSV</button>
+            <button id="importCsvButton" class="sidebarButton">Import CSV</button>
+            <button id="clearButton" class="sidebarButton">Clear</button>
+            <button id="statisticsButton" class="sidebarButton">Statistiken</button>
+        </div>
+    </div>
+
+    <div id="sidePanelIndicator">⚙</div>
+
+    <div id="messageContainer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/storageManager.js" type="module"></script>
+    <script src="js/resultManager.js" type="module"></script>
+    <script src="js/diceRoller.js" type="module"></script>
+    <script src="js/uiManager.js" type="module"></script>
+    <script src="js/eventListeners.js"></script>
+    <script src="js/sidePanelManager.js"></script>
+    <script src="js/messageManager.js"></script>
+    <script src="js/exportImport.js"></script>
+    <script src="js/statisticsManager.js"></script>
+    <script src="js/statisticsUI.js"></script>
+    <script src="js/soundManager.js" type="module"></script>
+    <script src="js/diceAnimator.js" type="module"></script>
+    <script src="js/settingsStorage.js"></script>
+    <script src="js/resultStorage.js"></script>
+    <script src="js/uiHelper.js" type="module"></script>
+    <script src="js/languageManager.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
